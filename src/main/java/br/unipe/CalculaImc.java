@@ -2,10 +2,10 @@ package br.unipe;
 
 import java.lang.Math;
 
-public class IMC 
+public class CalculaImc 
 {
     public double RetornaImc( double peso, double altura )
     {
-		return peso / pow(altura,2);
+		return peso / Math.pow(altura,2);
     }
 }

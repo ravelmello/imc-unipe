@@ -6,17 +6,17 @@ public class Main
 {
     public static void main( String[] args )
     {
-		Scanner scanner = new Scanner(System.in);
+		Scanner scan = new Scanner(System.in);
 
 		double peso, altura, imc;
 
 		System.out.printf("Informe o peso (em kgs):\n");
-		peso = ler.nextDouble();
+		peso = scan.nextDouble();
 
 		System.out.printf("\nInforme a altura (em metros):\n");
-		altura = ler.nextDouble();
+		altura = scan.nextDouble();
 
-		IMC calculaImc = new IMC();
+		CalculaImc calculaImc = new CalculaImc();
 		imc = calculaImc.RetornaImc(peso, altura);
 
 		System.out.printf("\n\nIMC = peso / (altura * altura)");
